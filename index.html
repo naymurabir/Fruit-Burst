@@ -47,14 +47,21 @@
         <!-- Navbar -->
         <nav class="max-w-screen-xl mx-auto py-5 px-0 md:px-16 lg:px-24">
 
-            <div class="navbar bg-[#F85559] rounded-full justify-around">
+            <div class="navbar bg-[#F85559] rounded-full">
                 <div class="navbar-start">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="mr-6 list-none text-white">Home</li>
+                        <li class="mr-6 list-none text-white">About Us</li>
+                        <li class="mr-6 list-none text-white">Shop</li>
+                        <li class="mr-6 list-none text-white">All Fruits</li>
+                    </ul>
+
                     <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <label tabindex="0" class="lg:hidden btn btn-ghost btn-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
+                                    d="M4 6h16M4 12h16M4 18h7" />
                             </svg>
                         </label>
                         <ul tabindex="0"
@@ -65,29 +72,17 @@
                             <li class="mr-6 list-none text-black">All Fruits</li>
                         </ul>
                     </div>
+                </div>
+                <div class="navbar-center">
+                    <div class="gap-3 flex items-center">
+                        <img class="w-8" src="./images/logo.png" alt="">
+                        <li class="list-none text-white text-2xl font-bold">Fruit Burst</li>
+                    </div>
+                </div>
+                <div class="navbar-end relative">
+                    <input class="p-2 rounded-full" type="search" placeholder="Search here">
+                    <i class="absolute right-2 fa-solid fa-magnifying-glass text-black text-xl"></i>
 
-                    <div class="hidden sm:block lg:block md:hidden  ">
-                        <ul class="flex ">
-                            <li class="mr-6 list-none text-white">Home</li>
-                            <li class="mr-6 list-none text-white">About Us</li>
-                            <li class="mr-6 list-none text-white">Shop</li>
-                            <li class="mr-6 list-none text-white">All Fruits</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="navbar-center lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <div class="gap-3 flex items-center">
-                            <img class="w-8" src="./images/logo.png" alt="">
-                            <li class="list-none text-white text-2xl font-bold">Fruit Burst</li>
-                        </div>
-                    </ul>
-                </div>
-                <div class="navbar-end hidden sm:block lg:block md:hidden relative left-40">
-                    <div class="flex justify-around items-center rounded-full bg-white xl:w-40 lg:w-40 md:w-52 p-1">
-                        <li class="list-none text-black text-sm">Search Here</li>
-                        <i class="fa-solid fa-magnifying-glass text-black text-xl"></i>
-                    </div>
                 </div>
             </div>
 
@@ -501,6 +496,7 @@
                 </div>
         </section>
 
+        <!-- Meet The Team Section -->
 
 
     </main>
