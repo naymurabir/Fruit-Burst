@@ -49,19 +49,28 @@
             <div
                 class="navbar md:flex md:items-center md:justify-between px-5  lg:bg-[#F85559] rounded-full md:text-white ">
                 <ul class="menu menu-horizontal px-1 hidden md:flex md:block ">
-                    <li class="mr-6 list-none text-white">Home</li>
-                    <li class="mr-6 list-none text-white">About Us</li>
-                    <li class="mr-6 list-none text-white">Shop</li>
-                    <li class="mr-6 list-none text-white">All Fruits</li>
+                    <li class="mr-6 list-none text-white"><a>Home</a></li>
+                    <li class="mr-6 list-none text-white"><a>About Us</a></li>
+                    <li class="mr-6 list-none text-white"><a>Shop</a></li>
+                    <li class="mr-6 list-none text-white"><a>All Fruits</a></li>
                 </ul>
                 <div class=" gap-2">
                     <div class="flex items-center gap-2">
                         <img class="w-8" src="./images/logo.png" alt="">
-                        <li class="list-none text-white text-2xl font-bold md:block normal-case ">Fruit Burst</li>
+                        <li class="list-none lg:text-white  text-2xl font-bold md:block normal-case ">Fruit Burst</li>
                     </div>
-                    <!-- <div class="text-2xl md:hidden block ml-20">
-                        <i class="fa-solid fa-bars"></i>
-                    </div> -->
+                    <div class="text-2xl md:hidden block ml-20">
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn m-1"><i class="fa-solid fa-bars"></i></label>
+                            <ul tabindex="0"
+                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-60">
+                                <li class="mr-6 list-none text-black"><a>Home</a></li>
+                                <li class="mr-6 list-none text-black"><a>About Us</a></li>
+                                <li class="mr-6 list-none text-black"><a>Shop</a></li>
+                                <li class="mr-6 list-none text-black"><a>All Fruits</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="hidden lg:block form-control relative">
                     <input class="input rounded-full w-[270px] " type="search" placeholder="Search here" />
@@ -70,7 +79,6 @@
                     </div>
                 </div>
             </div>
-
         </nav>
 
         <!-- Slider/Banner Section -->
