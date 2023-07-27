@@ -46,43 +46,28 @@
     <header>
         <!-- Navbar -->
         <nav class="max-w-screen-xl mx-auto py-5 px-0 md:px-16 lg:px-24">
-
-            <div class="navbar bg-[#F85559] rounded-full">
-                <div class="navbar-start">
-                    <ul class="menu menu-horizontal px-1 lg:flex hidden  ">
-                        <li class="mr-6 list-none text-white">Home</li>
-                        <li class="mr-6 list-none text-white">About Us</li>
-                        <li class="mr-6 list-none text-white">Shop</li>
-                        <li class="mr-6 list-none text-white">All Fruits</li>
-                    </ul>
-
-                    <div class="dropdown">
-                        <label tabindex="0" class="lg:hidden btn btn-ghost btn-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h7" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
-                            <li class="mr-6 list-none text-black">Home</li>
-                            <li class="mr-6 list-none text-black">About Us</li>
-                            <li class="mr-6 list-none text-black">Shop</li>
-                            <li class="mr-6 list-none text-black">All Fruits</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="navbar-center">
-                    <div class="gap-3 flex items-center">
+            <div
+                class="navbar md:flex md:items-center md:justify-between px-5  lg:bg-[#F85559] rounded-full md:text-white ">
+                <ul class="menu menu-horizontal px-1 hidden md:flex md:block ">
+                    <li class="mr-6 list-none text-white">Home</li>
+                    <li class="mr-6 list-none text-white">About Us</li>
+                    <li class="mr-6 list-none text-white">Shop</li>
+                    <li class="mr-6 list-none text-white">All Fruits</li>
+                </ul>
+                <div class=" gap-2">
+                    <div class="flex items-center gap-2">
                         <img class="w-8" src="./images/logo.png" alt="">
-                        <li class="list-none text-white text-2xl font-bold">Fruit Burst</li>
+                        <li class="list-none text-white text-2xl font-bold md:block normal-case ">Fruit Burst</li>
                     </div>
+                    <!-- <div class="text-2xl md:hidden block ml-20">
+                        <i class="fa-solid fa-bars"></i>
+                    </div> -->
                 </div>
-                <div class="navbar-end relative hidden lg:block">
-                    <input class="ml-52 p-2 rounded-full w-64 lg:w-52" type="search" placeholder="Search here">
-                    <i class="absolute right-14 top-2 fa-solid fa-magnifying-glass text-black text-xl"></i>
-
+                <div class="hidden lg:block form-control relative">
+                    <input class="input rounded-full w-[270px] " type="search" placeholder="Search here" />
+                    <div class="icon absolute right-7 top-2">
+                        <i class="fa-solid fa-magnifying-glass text-2xl text-black"></i>
+                    </div>
                 </div>
             </div>
 
@@ -622,7 +607,7 @@
                             class="flex flex-col-reverse lg:flex-row text-center items-center lg:text-left lg:flex lg:items-end gap-4">
                             <div class="text-center lg:text-end">
                                 <h1 class="text-base text-black font-extrabold mb-2">Integrated Supplier</h1>
-                                <hr class="w-20 mb-2">
+                                <hr class="w-20 text-right mb-2">
                                 <p class="text-black text-xs">Professional employees are there for you to pick the most
                                     amazing and fresh fruits.
                                 </p>
