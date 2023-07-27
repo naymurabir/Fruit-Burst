@@ -49,7 +49,7 @@
 
             <div class="navbar bg-[#F85559] rounded-full">
                 <div class="navbar-start">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 lg:flex hidden  ">
                         <li class="mr-6 list-none text-white">Home</li>
                         <li class="mr-6 list-none text-white">About Us</li>
                         <li class="mr-6 list-none text-white">Shop</li>
@@ -65,7 +65,7 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
                             <li class="mr-6 list-none text-black">Home</li>
                             <li class="mr-6 list-none text-black">About Us</li>
                             <li class="mr-6 list-none text-black">Shop</li>
@@ -79,9 +79,9 @@
                         <li class="list-none text-white text-2xl font-bold">Fruit Burst</li>
                     </div>
                 </div>
-                <div class="navbar-end relative">
-                    <input class="p-2 rounded-full" type="search" placeholder="Search here">
-                    <i class="absolute right-2 fa-solid fa-magnifying-glass text-black text-xl"></i>
+                <div class="navbar-end relative hidden lg:block">
+                    <input class="ml-40 p-2 rounded-full w-64 lg:w-52" type="search" placeholder="Search here">
+                    <i class="absolute right-14 top-2 fa-solid fa-magnifying-glass text-black text-xl"></i>
 
                 </div>
             </div>
@@ -568,8 +568,38 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="bg-[#121212] py-14 ">
+        <!-- Logo Content -->
+        <div class="gap-4 flex justify-center items-center mb-8">
+            <img class="w-8" src="./images/logo.png" alt="">
+            <li class="list-none text-white text-2xl font-bold">Fruit Burst</li>
+        </div>
 
+        <!-- Our Services-->
+        <div class="flex mx-auto justify-center">
+            <div class="md:flex md:gap-4 lg:flex lg:gap-4 text-sm text-white mb-5">
+                <div class="flex justify-center gap-8 mb-4">
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Shop</p>
+                    <p>All Fruits</p>
+                </div>
+
+                <div class="flex justify-center gap-5">
+                    <p>Support</p>
+                    <p>My Account</p>
+                </div>
+            </div>
+        </div>
+        <!-- Social Logo -->
+        <div class="flex justify-center  gap-5">
+            <a href=""><img class="h-6" src="./images/icons/apple 1.png" alt=""></a>
+            <a href=""><img class="h-6" src="./images/icons/facebook 1.png" alt=""></a>
+            <a href=""><img class="h-6" src="./images/icons/Group 49.png" alt=""></a>
+            <a href=""><img class="h-6" src="./images/icons/instagram 1.png" alt=""></a>
+            <a href=""><img class="h-6" src="./images/icons/linkedin 1.png" alt=""></a>
+            <a href=""><img class="h-6" src="./images/icons/twitter 1.png" alt=""></a>
+        </div>
     </footer>
 </body>
 
